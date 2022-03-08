@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Younes ERRAJI - Authentication</title>
-    <link rel="apple-touch-icon" href="./assets/images/favicon.png"/>
-    <link rel="shortcut icon" size="88x88" href="./assets/images/favicon.png"/>
+    <link rel="apple-touch-icon" href="./assets/images/favicon.ico"/>
+    <link rel="shortcut icon" size="88x88" href="./assets/images/global/favicon.ico"/>
+    <link rel="stylesheet" href="./Libraries/font-awesome-4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="./assets/styles/utilities/fonts/poppins.css"/>
     <link rel="stylesheet" href="./assets/styles/utilities/normalize.css"/>
     <link rel="stylesheet" href="./assets/styles/authentication.css"/>
@@ -16,23 +17,24 @@
     <header>
       <div class="container">
         <marquee class="info">
-          <ul>
+          <ul class="list-unstyled">
             <li><img src="./assets/icons/phone.svg" alt="phone">
-              <div class="content"><strong>+212 6________</strong><strong>+212 6________</strong></div>
+              <div class="content"><strong>+212 651 656 799</strong><strong>06 51 65 67 99</strong></div>
             </li>
             <li><img src="./assets/icons/chat.svg" alt="chat">
-              <div class="content"><strong>contact@younes-erraji.com</strong></div>
+              <div class="content"><strong>younes.erraji8@gmail.com</strong></div>
             </li>
-            <li><img src="./assets/icons/watch.svg" alt="watch">
-              <div class="content"><strong>Monday To Friday</strong><strong>9:00 – 18:00</strong></div>
+            <li><img src="./assets/icons/http.svg" alt="">
+              <div class="content"><strong>https://younes-erraji.github.io</strong></div>
             </li>
           </ul>
         </marquee>
-        <ul class="socials">
-          <li><a href=""><img src="./assets/icons/social media/instagram.svg" data-social="instagram"></a></li>
-          <li><a href=""><img src="./assets/icons/social media/linkedin.svg" data-social="linkedin"></a></li>
-          <li><a href=""><img src="./assets/icons/social media/github.svg" data-social="github"></a></li>
-          <li><a href=""><img src="./assets/icons/social media/codepen.svg" data-social="codepen"></a></li>
+        <ul class="socials list-unstyled">
+          <li><a title="Instagram" href="https://www.instagram.com/younes.erraji_" target="_blank"><img src="./assets/icons/social media/instagram.svg" alt="Instagram"></a></li>
+          <li><a title="LinkedIn" href="https://www.linkedin.com/in/younes-erraji" target="_blank"><img src="./assets/icons/social media/linkedin.svg" alt="LinkedIn"></a></li>
+          <li><a title="CodePen" href="https://codepen.io/younes-erraji" target="_blank"><img src="./assets/icons/social media/codepen.svg" alt="CodePen"></a></li>
+          <li><a title="Github" href="https://www.github.com/younes-erraji" target="_blank"><img src="./assets/icons/social media/github.png" alt="Github"></a></li>
+          <li><a title="Telegram" href="https://t.me/younes_erraji" target="_blank"><img src="./assets/icons/social media/telegram.svg" alt="Telegram"></a></li>
         </ul>
         <div class="languages">
           <div class="change"><img src="./assets/icons/flags/morocco.svg" alt="Arabic"><span>AR</span><i class="fa fa-bars"></i></div>
@@ -44,57 +46,73 @@
       <div class="container">
         <input id="nav-check" type="checkbox">
         <div class="nav-header">
-          <div class="nav-brand"><img src="./assets/images/logo.png" height="43.6" alt=""></div>
-          <div class="nav-title">Younes</div>
+          <div class="nav-brand"><img src="./assets/images/global/logo.png" height="43.6" alt=""></div>
+          <div class="nav-title"><a href="./index.html">Younes ERRAJI</a></div>
         </div>
         <div class="nav-button">
           <label for="nav-check"><span></span><span></span><span></span>
           </label>
         </div>
-        <div class="nav-links"><a href="./index.html">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#careers">Careers</a><a href="./contact.html">Contact</a><a class="account m-start:1 m-end:1" href="./sign-in.html">Sign In</a><a class="account" href="./sign-up.html">Sign Up</a></div>
+        <div class="nav-links"><a href="./index.html">Home</a><a href="./about.html">About</a><a href="./skills.html">Skills</a><a href="./projects.html">Projects</a><a href="#careers">Careers</a><a href="./contact.html">Contact</a><a class="account m-start:1 m-end:1" href="./sign-in.html">Sign In</a><a class="account" href="./sign-up.html">Sign Up</a></div>
       </div>
     </nav>
-    <form class="main-form" method="post">
-      <h1>Register</h1>
-      <div class="name">
-        <div>
-          <label for="name">name <span class="required">*</span></label>
+    <div class="settings-overlay hidden"></div>
+    <div class="settings" id="settings-box">
+      <div class="toggle-settings"></div>
+      <h2 class="setting-title">Settings Box</h2>
+      <p class="setting-desc">Lorem ipsum dolor sit.</p>
+      <hr>
+      <div class="setting-box">
+        <h3>Fonts</h3>
+        <select class="form-field" id="font-options">
+          <option selected disabled hidden>choose a font</option>
+          <option value="Poppins">Poppins</option>
+          <option value="Cairo">Cairo</option>
+        </select>
+      </div>
+      <hr>
+      <div class="setting-box">
+        <h3>Themes</h3>
+        <div class="fields-container">
+          <div class="theme-toggler"><span class="theme-title">Light</span>
+            <input type="checkbox" id="theme-toggler">
+            <label class="theme-toggler-container" for="theme-toggler">
+              <div class="circle"></div>
+            </label><span class="theme-title">Dark</span>
+          </div>
         </div>
-        <input type="text" id="name" name="name" required>
+      </div>
+    </div>
+    <form class="form-auth" id="form-register" method="POST">
+      <h1 class="special-heading">Register</h1>
+      <div class="name">
+        <label class="form-label" for="name">name <small class="required">*</small></label>
+        <input class="form-field" id="name" type="text" name="name" required>
       </div>
       <div class="email">
-        <div>
-          <label for="email">email <span class="required">*</span></label>
-        </div>
-        <input type="text" id="email" name="email" required>
+        <label class="form-label" for="email">email <small class="required">*</small></label>
+        <input class="form-field" id="email" type="email" name="email" required>
       </div>
       <div class="username">
-        <div>
-          <label for="user">username <span class="required">*</span></label>
-        </div>
-        <input type="text" id="user" name="username" required>
+        <label class="form-label" for="username">username <small class="required">*</small></label>
+        <input class="form-field" id="username" type="text" name="username" required>
       </div>
       <div class="password">
-        <div>
-          <label for="pass">password <span class="required">*</span></label>
-        </div>
-        <input type="password" id="pass" name="password" required>
+        <label class="form-label" for="password">password <small class="required">*</small></label>
+        <input class="form-field" id="password" type="password" name="password" required>
       </div>
       <div class="confirm">
-        <div>
-          <label for="confirm">confirm <span class="required">*</span></label>
-        </div>
-        <input type="password" id="confirm" name="confirm" required>
-      </div><span>already a member? <a class="session" href="./login.html">sign in</a></span>
-      <div class="error"><span id="exception"></span></div>
-      <input class="submit button primary" type="submit" value="Login">
+        <label class="form-label" for="confirm-password">confirm <small class="required">*</small></label>
+        <input class="form-field" id="confirm-password" type="password" name="confirm-password" required>
+      </div><span class="switch-authentication">already a member? <a class="link" href="./sign-in.html">sign in</a></span>
+      <input class="register button primary" type="submit" value="Login">
     </form>
     <footer>
-      <div class="contact">
+      <div class="page-info">
         <div class="container">
           <div class="portfolio">
             <h3>Younes ERRAJI</h3>
-            <ul>
+            <ul class="list-unstyled">
               <li><img src="./assets/icons/map.svg">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facere qui fugiat repellendus impedit.</p>
               </li>
@@ -106,7 +124,7 @@
           </div>
           <div class="links">
             <h4>links</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li><a href="./index.html">- Home</a></li>
               <li><a href="#about">- About</a></li>
               <li><a href="#skills">- Skills</a></li>
@@ -121,10 +139,16 @@
           </div>
         </div>
       </div>
-      <div class="copy">
+      <div class="copyright">
         <div class="container">
-          <p>&copy; Copyright <strong>Younes ERRAJI</strong>. All Rights Reserved<span>Designed by Younes ERRAJI.</span></p>
-          <div class="social"><a title="Instagram" href="https://www.instagram.com/youneserraji_/" target="_blank"><img src="./assets/icons/social media/instagram.svg" alt=""></a><a title="LinkedIn" href="https://www.linkedin.com/in/younes-erraji" target="_blank"><img src="./assets/icons/social media/linkedin.svg" alt=""></a><a title="CodePen" href="https://codepen.io/younes-erraji" target="_blank"><img src="./assets/icons/social media/codepen.svg" alt=""></a><a title="Github" href="https://www.github.com/younes-erraji" target="_blank"><img src="./assets/icons/social media/github.svg" alt=""></a></div>
+          <p>&copy; Copyright <strong>Younes ERRAJI</strong>.<br>All Rights Reserved.<br>Designed with ❤ by Younes ERRAJI.</p>
+          <ul class="socials list-unstyled">
+            <li><a title="Instagram" href="https://www.instagram.com/younes.erraji_" target="_blank"><img src="./assets/icons/social media/instagram.svg" alt="Instagram"></a></li>
+            <li><a title="LinkedIn" href="https://www.linkedin.com/in/younes-erraji" target="_blank"><img src="./assets/icons/social media/linkedin.svg" alt="LinkedIn"></a></li>
+            <li><a title="CodePen" href="https://codepen.io/younes-erraji" target="_blank"><img src="./assets/icons/social media/codepen.svg" alt="CodePen"></a></li>
+            <li><a title="Github" href="https://www.github.com/younes-erraji" target="_blank"><img src="./assets/icons/social media/github.png" alt="Github"></a></li>
+            <li><a title="Telegram" href="https://t.me/younes_erraji" target="_blank"><img src="./assets/icons/social media/telegram.svg" alt="Telegram"></a></li>
+          </ul>
         </div>
       </div>
     </footer>

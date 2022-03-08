@@ -1,25 +1,48 @@
-const projects = document.querySelectorAll(".projects#projects .button.info"),
-  modalContainer = this.document.querySelector(".modal"),
-  modalImage = document.querySelector(".modal .modal-image img"),
-  modalCloseButton = document.querySelector(".modal .modal-close-button");
+window.addEventListener("load", function () {
+  const modalContainer = this.document.querySelector(".modal"),
+    modalHeader = document.querySelector(".modal .modal-header .modal-title"),
+    modalText = document.querySelector(".modal .modal-text"),
+    modalImage = document.querySelector(".modal .modal-image img"),
+    modalCloseButton = document.querySelector(
+      ".modal .modal-body .modal-content .modal-header .modal-button-close"
+    );
 
-projects.forEach((project) => {
-  project.addEventListener("click", function () {
-    let imageSource = this.parentElement.parentElement.children[0].getAttribute(
-        "src"
-      ),
-      imageAlt = this.parentElement.parentElement.children[0].getAttribute(
-        "alt"
-      );
-    modalImage.src = imageSource;
-    modalImage.alt = imageAlt;
+  document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("display-project")) {
+      let imageSource = e.target.parentElement.parentElement.children[0].children[1].getAttribute(
+          "src"
+        ),
+        imageAlt = e.target.parentElement.parentElement.children[0].children[1].getAttribute(
+          "alt"
+        );
+      modalImage.src = imageSource;
+      modalImage.alt = imageAlt;
 
-    modalContainer.style.display = "flex";
+      modalHeader.textContent = e.target.parentElement.children[0].textContent;
+      modalText.textContent = e.target.parentElement.children[1].textContent;
+
+      modalContainer.style.display = "flex";
+
+      document.body.classList.add("unscrolled");
+    }
   });
-});
 
-modalCloseButton.onclick = () => {
-  modalImage.src = "";
-  modalImage.alt = "";
-  modalContainer.style.display = "none";
-};
+  modalCloseButton.onclick = closeModal;
+
+  modalContainer.onclick = function (e) {
+    // e.stopPropagation();
+
+    if (e.target == this) {
+      closeModal();
+    }
+  };
+
+  function closeModal() {
+    modalImage.src = "";
+    modalImage.alt = "";
+    modalHeader.textContent = "";
+    modalText.textContent = "";
+    modalContainer.style.display = "none";
+    document.body.classList.remove("unscrolled");
+  }
+});

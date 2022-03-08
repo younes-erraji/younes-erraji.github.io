@@ -1,10 +1,12 @@
 window.onload = function () {
-  const up = document.querySelector("span.up"),
+  const up = document.querySelector("button.up"),
     navButton = document.querySelector(".nav-button label"),
     check = document.getElementById("nav-check"),
     checkbox = document.getElementById("nav-check"),
     toggleSettings = document.querySelector(".toggle-settings"),
-    settingsBox = document.querySelector("#settings-box");
+    settingsBox = document.querySelector("#settings-box"),
+    settingsOverlay = document.querySelector(".settings-overlay");
+
   checkbox.checked = false;
   if (window.scrollY > 1000) {
     up.style.display = "flex";
@@ -27,5 +29,10 @@ window.onload = function () {
   };
   toggleSettings.onclick = function () {
     settingsBox.classList.toggle("visible");
+    settingsOverlay.classList.toggle("hidden");
+  };
+  settingsOverlay.onclick = function () {
+    settingsBox.classList.toggle("visible");
+    settingsOverlay.classList.toggle("hidden");
   };
 };

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Younes ERRAJI - Contact</title>
-    <link rel="apple-touch-icon" href="./assets/images/favicon.png"/>
-    <link rel="shortcut icon" size="88x88" href="./assets/images/favicon.png"/>
+    <link rel="apple-touch-icon" href="./assets/images/favicon.ico"/>
+    <link rel="shortcut icon" size="88x88" href="./assets/images/global/favicon.ico"/>
+    <link rel="stylesheet" href="./Libraries/font-awesome-4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="./assets/styles/utilities/fonts/poppins.css"/>
     <link rel="stylesheet" href="./assets/styles/utilities/normalize.css"/>
     <link rel="stylesheet" href="./assets/styles/contact.css"/>
@@ -16,23 +17,24 @@
     <header>
       <div class="container">
         <marquee class="info">
-          <ul>
+          <ul class="list-unstyled">
             <li><img src="./assets/icons/phone.svg" alt="phone">
-              <div class="content"><strong>+212 6________</strong><strong>+212 6________</strong></div>
+              <div class="content"><strong>+212 651 656 799</strong><strong>06 51 65 67 99</strong></div>
             </li>
             <li><img src="./assets/icons/chat.svg" alt="chat">
-              <div class="content"><strong>contact@younes-erraji.com</strong></div>
+              <div class="content"><strong>younes.erraji8@gmail.com</strong></div>
             </li>
-            <li><img src="./assets/icons/watch.svg" alt="watch">
-              <div class="content"><strong>Monday To Friday</strong><strong>9:00 – 18:00</strong></div>
+            <li><img src="./assets/icons/http.svg" alt="">
+              <div class="content"><strong>https://younes-erraji.github.io</strong></div>
             </li>
           </ul>
         </marquee>
-        <ul class="socials">
-          <li><a href=""><img src="./assets/icons/social media/instagram.svg" data-social="instagram"></a></li>
-          <li><a href=""><img src="./assets/icons/social media/linkedin.svg" data-social="linkedin"></a></li>
-          <li><a href=""><img src="./assets/icons/social media/github.svg" data-social="github"></a></li>
-          <li><a href=""><img src="./assets/icons/social media/codepen.svg" data-social="codepen"></a></li>
+        <ul class="socials list-unstyled">
+          <li><a title="Instagram" href="https://www.instagram.com/younes.erraji_" target="_blank"><img src="./assets/icons/social media/instagram.svg" alt="Instagram"></a></li>
+          <li><a title="LinkedIn" href="https://www.linkedin.com/in/younes-erraji" target="_blank"><img src="./assets/icons/social media/linkedin.svg" alt="LinkedIn"></a></li>
+          <li><a title="CodePen" href="https://codepen.io/younes-erraji" target="_blank"><img src="./assets/icons/social media/codepen.svg" alt="CodePen"></a></li>
+          <li><a title="Github" href="https://www.github.com/younes-erraji" target="_blank"><img src="./assets/icons/social media/github.png" alt="Github"></a></li>
+          <li><a title="Telegram" href="https://t.me/younes_erraji" target="_blank"><img src="./assets/icons/social media/telegram.svg" alt="Telegram"></a></li>
         </ul>
         <div class="languages">
           <div class="change"><img src="./assets/icons/flags/morocco.svg" alt="Arabic"><span>AR</span><i class="fa fa-bars"></i></div>
@@ -44,80 +46,90 @@
       <div class="container">
         <input id="nav-check" type="checkbox">
         <div class="nav-header">
-          <div class="nav-brand"><img src="./assets/images/logo.png" height="43.6" alt=""></div>
-          <div class="nav-title">Younes</div>
+          <div class="nav-brand"><img src="./assets/images/global/logo.png" height="43.6" alt=""></div>
+          <div class="nav-title"><a href="./index.html">Younes ERRAJI</a></div>
         </div>
         <div class="nav-button">
           <label for="nav-check"><span></span><span></span><span></span>
           </label>
         </div>
-        <div class="nav-links"><a href="./index.html">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#careers">Careers</a><a href="./contact.html">Contact</a><a class="account m-start:1 m-end:1" href="./sign-in.html">Sign In</a><a class="account" href="./sign-up.html">Sign Up</a></div>
+        <div class="nav-links"><a href="./index.html">Home</a><a href="./about.html">About</a><a href="./skills.html">Skills</a><a href="./projects.html">Projects</a><a href="#careers">Careers</a><a href="./contact.html">Contact</a><a class="account m-start:1 m-end:1" href="./sign-in.html">Sign In</a><a class="account" href="./sign-up.html">Sign Up</a></div>
       </div>
     </nav>
+    <div class="settings-overlay hidden"></div>
+    <div class="settings" id="settings-box">
+      <div class="toggle-settings"></div>
+      <h2 class="setting-title">Settings Box</h2>
+      <p class="setting-desc">Lorem ipsum dolor sit.</p>
+      <hr>
+      <div class="setting-box">
+        <h3>Fonts</h3>
+        <select class="form-field" id="font-options">
+          <option selected disabled hidden>choose a font</option>
+          <option value="Poppins">Poppins</option>
+          <option value="Cairo">Cairo</option>
+        </select>
+      </div>
+      <hr>
+      <div class="setting-box">
+        <h3>Themes</h3>
+        <div class="fields-container">
+          <div class="theme-toggler"><span class="theme-title">Light</span>
+            <input type="checkbox" id="theme-toggler">
+            <label class="theme-toggler-container" for="theme-toggler">
+              <div class="circle"></div>
+            </label><span class="theme-title">Dark</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <iframe src="https://www.google.com/maps/embed?" height="240" allowfullscreen="true" loading="lazy"></iframe>
     <div class="contact" id="contact">
       <div class="overlay"></div>
       <div class="container">
-        <div class="info">
+        <div class="contact-info">
           <h2 class="special-heading">Contact Us</h2>
           <p>## 📫 Connect with me</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iusto repudiandae harum placeat sequi, illo incidunt tempora nemo modi alias. Esse quaerat consectetur reprehenderit dolorum nisi blanditiis, dolorem illo ipsa perspiciatis facere officiis quisquam magnam odio eaque eos sapiente nemo repudiandae error eius dicta.</p>
-          <p><img src="./assets/icons/chat.svg" alt="">younes.erraji08@gmail.com</p>
-          <p><img src="./assets/icons/phone.svg" alt="">06 37.56.98.00</p>
-          <p><img src="./assets/icons/phone.svg" alt="">(+212) 6 37.56.98.34</p>
+          <p><img src="./assets/icons/chat.svg" alt="">younes.erraji8@gmail.com</p>
+          <p><img src="./assets/icons/phone.svg" alt="">06 51.65.67.99</p>
+          <p><img src="./assets/icons/phone.svg" alt="">(+212) 6 51.65.67.99</p>
         </div>
         <form>
           <p>Send an e-mail. All fields marked with an asterisk * are required</p>
-          <label for="name">name <span class="required">*</span></label>
-          <input type="text" id="name">
-          <label for="email">email address <span class="required">*</span></label>
-          <input type="email" id="email">
-          <label for="phone">phone <span class="required">*</span></label>
-          <input type="text" id="phone">
-          <label for="message">message <span class="required">*</span></label>
-          <textarea id="message"></textarea>
-          <div class="check">
-            <input type="checkbox" id="check">
-            <label for="check">Send a copy to your address </label>
+          <label class="form-label" for="name">name <small class="required">*</small></label>
+          <input class="form-field" type="text" id="name">
+          <label class="form-label" for="email">email address <small class="required">*</small></label>
+          <input class="form-field" type="email" id="email">
+          <label class="form-label" for="phone">phone <small class="required">*</small></label>
+          <input class="form-field" type="text" id="phone">
+          <label class="form-label" for="message">message <small class="required">*</small></label>
+          <textarea class="form-field" id="message"></textarea>
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox">
+            <label class="form-label" for="checkbox">Send a copy to your address </label>
           </div>
           <input class="button primary" type="submit" value="Send">
         </form>
       </div>
     </div>
-    <div class="partners">
+    <div class="resources">
       <div class="container">
-        <h2 class="special-heading">our partners</h2>
+        <h2 class="special-heading">resources</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia dolore, reiciendis asperiores eius ipsam ad consequatur distinctio saepe id excepturi quam, ducimus eaque!</p>
-        <div class="partners-content">
-          <ul>
-            <li><img src="./assets/images/partners/android.svg"></li>
-            <li><img src="./assets/images/partners/wordpress.svg"></li>
-            <li><img src="./assets/images/partners/atom.svg"></li>
-            <li><img src="./assets/images/partners/babel.svg"></li>
-            <li><img src="./assets/images/partners/bootstrap.svg"></li>
-            <li><img src="./assets/images/partners/codepen.svg"></li>
-            <li><img src="./assets/images/partners/dot-net.svg"></li>
-            <li><img src="./assets/images/partners/github.svg"></li>
-            <li><img src="./assets/images/partners/react.svg"></li>
-            <li><img src="./assets/images/partners/typescript.svg"></li>
-            <li><img src="./assets/images/partners/vscode.svg"></li>
-            <li><img src="./assets/images/partners/visualstudio.svg"></li>
-            <li><img src="./assets/images/partners/vuejs.svg"></li>
-            <li><img src="./assets/images/partners/webstorm.svg"></li>
-            <li><img src="./assets/images/partners/windows8.svg"></li>
-            <li><img src="./assets/images/partners/azure.svg"></li>
-          </ul>
+        <div class="resources-content">
+          <ul class="list-unstyled"></ul>
         </div>
         <section><span class="slider selected" data-index="0"></span><span class="slider" data-index="1"></span><span class="slider" data-index="2"></span><span class="slider" data-index="3"></span>
         </section>
       </div>
     </div>
     <footer>
-      <div class="contact">
+      <div class="page-info">
         <div class="container">
           <div class="portfolio">
             <h3>Younes ERRAJI</h3>
-            <ul>
+            <ul class="list-unstyled">
               <li><img src="./assets/icons/map.svg">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facere qui fugiat repellendus impedit.</p>
               </li>
@@ -129,7 +141,7 @@
           </div>
           <div class="links">
             <h4>links</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li><a href="./index.html">- Home</a></li>
               <li><a href="#about">- About</a></li>
               <li><a href="#skills">- Skills</a></li>
@@ -144,14 +156,22 @@
           </div>
         </div>
       </div>
-      <div class="copy">
+      <div class="copyright">
         <div class="container">
-          <p>&copy; Copyright <strong>Younes ERRAJI</strong>. All Rights Reserved<span>Designed by Younes ERRAJI.</span></p>
-          <div class="social"><a title="Instagram" href="https://www.instagram.com/youneserraji_/" target="_blank"><img src="./assets/icons/social media/instagram.svg" alt=""></a><a title="LinkedIn" href="https://www.linkedin.com/in/younes-erraji" target="_blank"><img src="./assets/icons/social media/linkedin.svg" alt=""></a><a title="CodePen" href="https://codepen.io/younes-erraji" target="_blank"><img src="./assets/icons/social media/codepen.svg" alt=""></a><a title="Github" href="https://www.github.com/younes-erraji" target="_blank"><img src="./assets/icons/social media/github.svg" alt=""></a></div>
+          <p>&copy; Copyright <strong>Younes ERRAJI</strong>.<br>All Rights Reserved.<br>Designed with ❤ by Younes ERRAJI.</p>
+          <ul class="socials list-unstyled">
+            <li><a title="Instagram" href="https://www.instagram.com/younes.erraji_" target="_blank"><img src="./assets/icons/social media/instagram.svg" alt="Instagram"></a></li>
+            <li><a title="LinkedIn" href="https://www.linkedin.com/in/younes-erraji" target="_blank"><img src="./assets/icons/social media/linkedin.svg" alt="LinkedIn"></a></li>
+            <li><a title="CodePen" href="https://codepen.io/younes-erraji" target="_blank"><img src="./assets/icons/social media/codepen.svg" alt="CodePen"></a></li>
+            <li><a title="Github" href="https://www.github.com/younes-erraji" target="_blank"><img src="./assets/icons/social media/github.png" alt="Github"></a></li>
+            <li><a title="Telegram" href="https://t.me/younes_erraji" target="_blank"><img src="./assets/icons/social media/telegram.svg" alt="Telegram"></a></li>
+          </ul>
         </div>
       </div>
-    </footer><span class="button primary up"><img src="./assets/icons/up.svg" alt=""></span>
+    </footer>
+    <button class="button primary up"><img src="./assets/icons/up.svg" alt=""></button>
     <script src="./assets/scripts/script.js"></script>
     <script src="./assets/scripts/changeLang.js"></script>
+    <script src="./assets/scripts/themesSwitcher.js"></script>
   </body>
 </html>

@@ -1,8 +1,52 @@
 [
-  { "Project": ["cnrst.jpg", "#", "CNRST's project"] },
-  { "Project": ["wallpapers.jpg", "#", "WallPapers"] },
-  { "Project": ["imageshare.jpg", "#", "imageshare"] },
-  { "Project": ["out of the world.jpg", "#", "out of the world"] },
-  { "Project": ["PFE.jpg", "#", "FE Project"] },
-  { "Project": ["tanatostudio.jpg", "#", "TanatoStudio"] }
+  {
+    "Project": {
+      "name": "CNRST",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?",
+      "link": "#",
+      "source code": "https://github.com/younes-erraji/CNRST",
+      "image": "CNRST.jpg",
+      "alt": "CNRST's project"
+    }
+  },
+  {
+    "Project": {
+      "name": "DIEF",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?",
+      "link": "https://forum-dakhla.tamtechsolution.com",
+      "source code": "https://github.com/younes-erraji/DIEF-Laravel",
+      "image": "DIEF.jpg",
+      "alt": "DIEF"
+    }
+  },
+  {
+    "Project": {
+      "name": "imageshare",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?",
+      "link": "#",
+      "source code": "https://github.com/younes-erraji/imageshare",
+      "image": "imageshare.jpg",
+      "alt": "imageshare"
+    }
+  },
+  {
+    "Project": {
+      "name": "Special Design",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?",
+      "link": "#",
+      "source code": "#",
+      "image": "Special Design.png",
+      "alt": "Special Design"
+    }
+  },
+  {
+    "Project": {
+      "name": "Bourse",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?",
+      "link": "https://bourse.tamkine.org/",
+      "source code": "https://github.com/younes-erraji/bourse",
+      "image": "TAMKINE BOURSE.png",
+      "alt": "Bourse"
+    }
+  }
 ]

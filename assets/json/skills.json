@@ -1,0 +1,73 @@
+[
+  { "skill": { "name": "HTML", "percentage": "96%", "icon": "html.svg" } },
+  { "skill": { "name": "CSS", "percentage": "86%", "icon": "css.svg" } },
+  { "skill": { "name": "Pug JS", "percentage": "88%", "icon": "pug.svg" } },
+  { "skill": { "name": "Sass", "percentage": "93%", "icon": "sass.svg" } },
+  { "skill": { "name": "UI-UX", "percentage": "87%", "icon": "ui-ux.svg" } },
+  {
+    "skill": {
+      "name": "Bootstrap",
+      "percentage": "87%",
+      "icon": "bootstrap.svg"
+    }
+  },
+  { "skill": { "name": "C#", "percentage": "76%", "icon": "csharp.svg" } },
+  {
+    "skill": {
+      "name": "SQL Server, MySQL",
+      "percentage": "91%",
+      "icon": "databases.svg"
+    }
+  },
+  { "skill": { "name": "PHP", "percentage": "46%", "icon": "php.svg" } },
+  {
+    "skill": { "name": "Laravel", "percentage": "76%", "icon": "laravel.svg" }
+  },
+
+  {
+    "skill": {
+      "name": "Javascript",
+      "percentage": "78%",
+      "icon": "javascript.svg"
+    }
+  },
+  { "skill": { "name": "JQuery", "percentage": "88%", "icon": "jquery.svg" } },
+  { "skill": { "name": "Node JS", "percentage": "76%", "icon": "nodejs.svg" } },
+  {
+    "skill": { "name": "React JS", "percentage": "68%", "icon": "react js.svg" }
+  },
+  { "skill": { "name": "VueJS", "percentage": "76%", "icon": "vuejs.svg" } },
+  {
+    "skill": {
+      "name": "Typescript",
+      "percentage": "48%",
+      "icon": "typescript.svg"
+    }
+  },
+
+  {
+    "skill": {
+      "name": "Wordpress",
+      "percentage": "76%",
+      "icon": "wordpress.svg"
+    }
+  },
+  {
+    "skill": {
+      "name": "Moodle",
+      "percentage": "76%",
+      "icon": "Moodle.svg"
+    }
+  },
+
+  { "skill": { "name": "Java", "percentage": "36%", "icon": "java.svg" } },
+  {
+    "skill": {
+      "name": "android studio",
+      "percentage": "36%",
+      "icon": "android-studio.svg"
+    }
+  },
+  { "skill": { "name": "Gulp JS", "percentage": "36%", "icon": "gulp.svg" } },
+  { "skill": { "name": "Axios", "percentage": "36%", "icon": "axios.svg" } }
+]

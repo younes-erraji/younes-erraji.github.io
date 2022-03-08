@@ -1,0 +1,18 @@
+[
+  { "resource": { "name": "android" } },
+  { "resource": { "name": "wordpress" } },
+  { "resource": { "name": "atom" } },
+  { "resource": { "name": "babel" } },
+  { "resource": { "name": "bootstrap" } },
+  { "resource": { "name": "codepen" } },
+  { "resource": { "name": "dot-net" } },
+  { "resource": { "name": "github" } },
+  { "resource": { "name": "react" } },
+  { "resource": { "name": "typescript" } },
+  { "resource": { "name": "vscode" } },
+  { "resource": { "name": "visualstudio" } },
+  { "resource": { "name": "vuejs" } },
+  { "resource": { "name": "webstorm" } },
+  { "resource": { "name": "windows8" } },
+  { "resource": { "name": "azure" } }
+]
