@@ -1,0 +1,44 @@
+.about#about {
+  padding: var(--main-padding) 0;
+  overflow: hidden;
+  .container {
+    @include flexible(space-between, center);
+    .developer {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      row-gap: 18px;
+      width: 58%;
+      @import "../components/socials";
+    }
+    .picture {
+      width: 40%;
+      height: 340px;
+      // overflow-y: hidden;
+      position: relative;
+      img {
+        width: 100vh;
+        // height: 100%;
+        max-height: 340px;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .about#about {
+    .container {
+      flex-direction: column;
+      .developer {
+        width: 100%;
+      }
+      .picture {
+        width: 100%;
+        order: -1;
+      }
+    }
+  }
+}

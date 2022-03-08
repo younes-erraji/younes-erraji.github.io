@@ -1,0 +1,52 @@
+.grad-bar
+header
+  .container
+    marquee.info
+      ul.list-unstyled
+        li
+          img(src='./assets/icons/phone.svg' alt='phone')
+          .content
+            strong +212 651 656 799
+            strong 06 51 65 67 99
+        li
+          img(src='./assets/icons/chat.svg' alt='chat')
+          .content: strong younes.erraji8@gmail.com
+        li
+          img(src='./assets/icons/http.svg' alt='')
+          .content: strong https://younes-erraji.github.io
+    include ../components/socials
+
+    .languages
+      .change
+        img(src="./assets/icons/flags/morocco.svg" alt="Arabic")
+        span AR
+        i(class="fa fa-bars")
+      .form.select
+        a.active(href='')
+          img(src="./assets/icons/flags/morocco.svg" alt="Arabic")
+          span Arabic
+        a(href='')
+          img(src="./assets/icons/flags/france.svg" alt="French")
+          span French
+        a(href='')
+          img(src="./assets/icons/flags/united states.svg" alt="English")
+          span English
+nav
+  .container
+    input#nav-check(type="checkbox")
+    .nav-header
+      .nav-brand: img(src="./assets/images/global/logo.png", height="43.6", alt="")
+      .nav-title: a(href='./index.html') Younes ERRAJI
+    .nav-button
+      label(for="nav-check")
+        - for (let i = 0; i < 3; i++)
+          span
+    .nav-links
+      a(href="./index.html") Home
+      a(href="./about.html") About
+      a(href="./skills.html") Skills
+      a(href="./projects.html") Projects
+      a(href="#careers") Careers
+      a(href="./contact.html") Contact
+      a(href="./sign-in.html", class="account m-start:1 m-end:1") Sign In
+      a.account(href="./sign-up.html") Sign Up

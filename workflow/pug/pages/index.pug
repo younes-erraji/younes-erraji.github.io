@@ -1,0 +1,38 @@
+include ../assets/global/head
+
+doctype html
+html
+  head
+    +head('Younes ERRAJI - Home', 'style.css')
+  body
+    include ../assets/partials/header
+    include ../assets/sections/landing
+
+    include ../assets/utilities/settings
+
+    include ../assets/sections/about
+    include ../assets/sections/skills
+    include ../assets/sections/services
+    include ../assets/sections/projects
+    include ../assets/sections/careers
+    include ../assets/sections/resources
+
+    .contact
+      .container
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde, minima a explicabo maiores aut ducimus magni, iure illo architecto amet ipsum provident fuga modi quos cumque voluptate quia? Ea, aliquid accusamus quam perferendis neque nemo voluptatem corrupti!
+        a.button.primary(href='./contact.html') Contact us
+
+    include ../assets/components/modal
+
+    include ../assets/partials/footer
+    include ../assets/components/scroll-up
+    include ../assets/global/scripts
+
+    script(src="./assets/scripts/randomBg.js")
+    script(src="./assets/scripts/modals.js")
+
+    include ../assets/global/react-scripts
+    
+    script(src="./assets/scripts/fetch/projects.js" type='text/babel')
+    script(src="./assets/scripts/fetch/resources.js" type='text/babel')
+    script(src="./assets/scripts/fetch/skills.js" type='text/babel')

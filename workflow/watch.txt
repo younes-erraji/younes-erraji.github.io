@@ -1,0 +1,5 @@
+-- Pug
+pug "F:\Projects\Portfolio\workflow\pug\pages" --watch --pretty -o "F:\Projects\Portfolio\dist"
+
+-- Sass
+sass --watch "F:\Projects\Portfolio\workflow\sass\pages":"F:\Projects\Portfolio\dist\assets\styles" --style=compressed

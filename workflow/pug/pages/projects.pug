@@ -1,0 +1,22 @@
+include ../assets/global/head
+
+doctype html
+html
+  head
+    +head('Younes ERRAJI - Projects', 'projects.css')
+  body
+    include ../assets/partials/header
+
+    include ../assets/utilities/settings
+
+    include ../assets/sections/projects
+
+    include ../assets/partials/footer
+    include ../assets/components/scroll-up
+    include ../assets/global/scripts
+
+    script(src="./assets/scripts/modals.js")
+    
+    include ../assets/global/react-scripts
+
+    script(src="./assets/scripts/fetch/projects.js" type='text/babel')

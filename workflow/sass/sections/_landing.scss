@@ -1,0 +1,62 @@
+@import "../utilities/overlay";
+
+.landing {
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: calc(100vh - 115.6px);
+  @include flexible(center, center);
+  gap: 14px;
+
+  border-bottom-left-radius: 70% 60px;
+  border-bottom-right-radius: 30% 10px;
+  padding: var(--main-padding) 14px;
+  position: relative;
+
+  .overlay {
+    @extend %overlay;
+  }
+
+  .intro-image {
+    width: 178px;
+    max-width: 20%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .intro-text {
+    width: 404px;
+    max-width: 80%;
+    position: relative;
+    z-index: 5;
+
+    h1 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 2.8rem;
+      span {
+        color: var(--blue-primary);
+      }
+    }
+    p {
+      @extend %paragraph-lead;
+      font-weight: bolder;
+      text-align: justify;
+    }
+  }
+
+  .hash {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--dark-secondary);
+    z-index: 5;
+  }
+}

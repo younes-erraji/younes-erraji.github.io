@@ -1,0 +1,11 @@
+%icon {
+  vertical-align: middle;
+  transition: 0.4s background-color;
+  padding: 2px;
+  border-radius: 4px;
+  width: 34px;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--grey-light);
+  }
+}

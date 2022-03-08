@@ -1,0 +1,23 @@
+.settings-overlay.hidden
+.settings#settings-box
+  .toggle-settings
+  h2.setting-title Settings Box
+  p.setting-desc Lorem ipsum dolor sit.
+  hr
+  .setting-box
+    h3 Fonts
+    select#font-options.form-field
+      option(selected disabled hidden) choose a font
+      option(value='Poppins') Poppins
+      option(value='Cairo') Cairo
+  hr
+  .setting-box
+    h3 Themes
+    .fields-container
+      //- input#dark-theme(type="radio", name="dark-theme")
+      //- label(for='dark-theme') Dark
+      //- input#white-theme(type="radio", name="white-theme")
+      //- label(for='white-theme') White
+      include ../components/toggler
+
+

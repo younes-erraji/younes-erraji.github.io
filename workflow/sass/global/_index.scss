@@ -1,0 +1,17 @@
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.unscrolled {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none !important;
+}
+
+body {
+  overflow-x: hidden;
+}

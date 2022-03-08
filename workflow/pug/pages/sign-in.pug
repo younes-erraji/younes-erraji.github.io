@@ -1,0 +1,28 @@
+include ../assets/global/head
+
+doctype html
+html
+  head
+    +head('Younes ERRAJI - Authentication', 'authentication.css')
+  body
+    include ../assets/partials/header
+
+    include ../assets/utilities/settings
+    
+    form#form-login.form-auth(method="post")
+      h1.special-heading Login
+      .username
+        label.form-label(for="username") username
+          small.required *
+        input#username.form-field(type="text" name="username" required)
+      .password
+        label.form-label(for="password") password 
+          small.required *
+        input#password.form-field(type="password" name="password" required)
+      .checkbox
+        input(type="checkbox" id="checkbox" name="checkbox")
+        label.form-label(for="checkbox") Remember me
+      span.switch-authentication not a member yet? 
+        a.link(href="./register.html") sign up
+      input.login.button.primary(type="submit" value="Login")
+    include ../assets/partials/footer

@@ -1,0 +1,37 @@
+include ../assets/global/head
+
+doctype html
+html
+  head
+    +head('Younes ERRAJI - Authentication', 'authentication.css')
+  body
+    include ../assets/partials/header
+
+    include ../assets/utilities/settings
+    
+    form#form-register.form-auth(method="POST")
+      h1.special-heading Register
+      .name
+        label.form-label(for="name") name 
+          small.required *
+        input#name.form-field(type="text" name="name" required)
+      .email
+        label.form-label(for="email") email 
+          small.required *
+        input#email.form-field(type="email" name="email" required)
+      .username
+        label.form-label(for="username") username 
+          small.required *
+        input#username.form-field(type="text" name="username" required)
+      .password
+        label.form-label(for="password") password 
+          small.required *
+        input#password.form-field(type="password" name="password" required)
+      .confirm
+        label.form-label(for="confirm-password") confirm 
+          small.required *
+        input#confirm-password.form-field(type="password" name="confirm-password" required)
+      span.switch-authentication already a member? 
+        a.link(href="./sign-in.html") sign in
+      input.register.button.primary(type="submit" value="Login")
+    include ../assets/partials/footer

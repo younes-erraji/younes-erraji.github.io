@@ -1,0 +1,100 @@
+.projects {
+  padding: var(--main-padding) 0;
+  background-image: $background-secondary;
+  .projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 80px;
+
+    @media (max-width: 300px) {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+
+    .card {
+      background-color: white;
+      overflow: hidden;
+      .card-image {
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 2px solid var(--blue-primary);
+
+        .image-placeholder {
+          position: absolute;
+          top: 8px;
+          bottom: 8px;
+          left: 8px;
+          right: 8px;
+          border-radius: 7px;
+          background-color: rgba(32, 107, 196, 0.7);
+          z-index: 3;
+          display: none;
+          align-items: center;
+          justify-content: center;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+          cursor: pointer;
+          transition: transform 0.7s ease-in-out;
+          &:hover {
+            transform: scale(1.08, 1.08) translateY(-10px);
+          }
+        }
+
+        &:hover {
+          .image-placeholder {
+            display: flex;
+          }
+        }
+      }
+
+      .card-info {
+        padding: 20px;
+        h3 {
+          margin: 0;
+          a {
+            color: var(--dark-secondary);
+            font-weight: bold;
+          }
+        }
+        p {
+          @extend %paragraph-lead;
+          display: -webkit-box;
+          display: box;
+          height: 1.6rem * 1.4 * 3;
+          -webkit-line-clamp: 3;
+          line-clamp: 3;
+          -webkit-box-orient: vertical;
+          -moz-box-orient: vertical;
+          box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  section.show-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+    a.show-more {
+      position: relative;
+      padding-inline: 38px;
+      img {
+        height: 18px;
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

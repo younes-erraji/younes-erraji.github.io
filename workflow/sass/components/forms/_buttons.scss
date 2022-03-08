@@ -1,0 +1,35 @@
+.button {
+  color: var(--white);
+  padding: 8px 17px;
+  border: 0;
+  margin: 10px;
+  border-radius: $radius;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $transition, box-shadow $transition;
+
+  &.primary {
+    background-color: var(--blue-primary);
+
+    &:hover {
+      background-color: darken($blue-primary, 14%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 4px rgb($blue-primary, 0.4);
+    }
+  }
+
+  &.secondary {
+    background-color: var(--blue-secondary);
+
+    &:hover {
+      background-color: darken($blue-secondary, 14%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 4px rgb($blue-secondary, 0.4);
+    }
+  }
+}

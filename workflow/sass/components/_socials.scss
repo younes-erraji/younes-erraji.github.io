@@ -1,0 +1,14 @@
+ul.socials {
+  display: grid;
+  grid-template-columns: repeat(5, 34px);
+  gap: 2px;
+  li {
+    a {
+      display: block;
+      width: 100%;
+      img {
+        @extend %icon;
+      }
+    }
+  }
+}

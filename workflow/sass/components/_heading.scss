@@ -1,0 +1,21 @@
+.special-heading {
+  color: var(--grey-light);
+  font-size: 74px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin: 0;
+  & + p {
+    margin: -28px 0 28px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--grey-dark);
+  }
+
+  @media (max-width: 767px) {
+    font-size: 54px;
+    & + p {
+      margin-top: -22px;
+    }
+  }
+}

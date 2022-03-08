@@ -1,0 +1,78 @@
+@import "../helpers/mixin";
+@import "../variables/colors";
+@import "../global/index";
+@import "../components/heading";
+@import "../components/forms/buttons";
+@import "../animations/grabBar";
+@import "../partials/header";
+@import "../utilities/icon";
+@import "../utilities/overlay";
+@import "../utilities/margin";
+@import "../utilities/paragraphs";
+
+@import "../partials/settings";
+
+iframe {
+  border: none;
+  width: 100%;
+}
+
+.contact {
+  background-image: url("./../images/contact.png");
+  background-size: cover;
+  background-position: center;
+  padding-block: var(--main-padding);
+
+  position: relative;
+
+  .overlay {
+    @extend %overlay;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    position: relative;
+    z-index: 5;
+
+    @media (max-width: 767.98px) {
+      grid-template-columns: 1fr;
+      row-gap: 14px;
+    }
+    @media (max-width: 575.98px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .contact-info {
+    p:not(:first-of-type) {
+      @extend %paragraph-lead;
+      color: var(--dark-secondary);
+      margin-inline-start: 34px;
+      img {
+        width: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        @include prefixes(margin-inline, 7px);
+      }
+    }
+  }
+  form {
+    p {
+      @extend %paragraph-lead;
+    }
+    @import "../components/forms/labels";
+    @import "../components/forms/fields";
+    @import "../components/forms/checkbox";
+
+    input:not([type="submit"]),
+    textarea {
+      @media (max-width: 767.98px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@import "../sections/resources";
+@import "../components/up";
+@import "../partials/footer";

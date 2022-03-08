@@ -1,0 +1,36 @@
+$blue-primary: #206bc4;
+$blue-secondary: #0d6efd;
+$radius: 4px;
+$transition: 0.4s;
+$background-secondary: linear-gradient(
+  180deg,
+  #fff 0%,
+  #6461610a 6%,
+  #6461610a 94%,
+  #fff 100%
+);
+
+:root {
+  --main-padding: 48px;
+
+  // Backgrounds
+  --background-primary: #f6f6f6;
+  --background-secondary: linear-gradient(
+    180deg,
+    #fff 0%,
+    #6461610a 6%,
+    #6461610a 94%,
+    #fff 100%
+  );
+
+  --blue-primary: #206bc4;
+  --blue-secondary: #0d6efd;
+  --dark-primary: #232e3c;
+  --dark-secondary: #34495e; // #6a6e71
+  --red: #d63939;
+  --white: #fefefe;
+  --grey-light: #dbdcdd; // #c6cacc
+  --grey-dark: #696969;
+
+  --shadow: rgba(0, 0, 0, 0.6);
+}

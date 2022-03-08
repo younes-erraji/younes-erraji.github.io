@@ -1,0 +1,64 @@
+.settings#settings-box {
+  width: 220px;
+  height: 100%;
+  position: fixed;
+  left: -218px;
+  top: 0;
+  background-color: #fefefefe;
+  z-index: 14;
+  transition: left 0.4s;
+  padding: 14px 7px;
+  text-align: center;
+  &.visible {
+    left: 0;
+  }
+  .toggle-settings {
+    cursor: e-resize;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: var(--blue-primary);
+    right: 0;
+    top: 0;
+    z-index: 7;
+  }
+
+  .setting-title {
+    font-size: 1.8rem;
+    color: var(--dark-primary);
+    font-weight: 600;
+    margin: 0 0 0 14px;
+  }
+  .setting-desc {
+    @extend %paragraph-lead;
+  }
+
+  .setting-box {
+    h3 {
+      font-size: 1.4rem;
+      color: var(--dark-primary);
+      font-weight: 600;
+      margin: 0 0 14px 0;
+    }
+
+    @import "../components/forms/fields";
+    .form-field {
+      width: 100%;
+      appearance: none;
+    }
+
+    @import "../components/toggler";
+  }
+}
+
+.settings-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--shadow);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 13;
+}

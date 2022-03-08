@@ -1,0 +1,51 @@
+include ../assets/global/head
+
+doctype html
+html
+  head
+    +head('Younes ERRAJI - Contact', 'contact.css')
+  body
+    include ../assets/partials/header
+
+    include ../assets/utilities/settings
+    
+    iframe(src="https://www.google.com/maps/embed?" height="240" allowfullscreen="true" loading="lazy")
+    .contact#contact
+      .overlay
+      .container
+        .contact-info
+          h2.special-heading Contact Us
+          p ## 📫 Connect with me
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iusto repudiandae harum placeat sequi, illo incidunt tempora nemo modi alias. Esse quaerat consectetur reprehenderit dolorum nisi blanditiis, dolorem illo ipsa perspiciatis facere officiis quisquam magnam odio eaque eos sapiente nemo repudiandae error eius dicta.
+          p
+            img(src='./assets/icons/chat.svg' alt='')
+            |younes.erraji8@gmail.com
+          p
+            img(src='./assets/icons/phone.svg' alt='')
+            |06 51.65.67.99
+          p
+            img(src='./assets/icons/phone.svg' alt='')
+            |(+212) 6 51.65.67.99
+        form
+          p Send an e-mail. All fields marked with an asterisk * are required
+          label.form-label(for='name') name 
+            small.required *
+          input.form-field(type="text" id='name')
+          label.form-label(for='email') email address 
+            small.required *
+          input.form-field(type="email" id='email')
+          label.form-label(for='phone') phone 
+            small.required *
+          input.form-field(type="text" id='phone')
+          label.form-label(for='message') message 
+            small.required *
+          textarea.form-field(id='message')
+          .checkbox
+            input(type='checkbox' id='checkbox')
+            label.form-label(for='checkbox') Send a copy to your address 
+          input.button.primary(type="submit" value="Send")
+
+    include ../assets/sections/resources
+    include ../assets/partials/footer
+    include ../assets/components/scroll-up
+    include ../assets/global/scripts

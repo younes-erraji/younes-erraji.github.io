@@ -1,0 +1,10 @@
+.resources
+  .container
+    h2.special-heading resources
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia dolore, reiciendis asperiores eius ipsam ad consequatur distinctio saepe id excepturi quam, ducimus eaque!
+    .resources-content
+      ul.list-unstyled
+    section
+      span.slider.selected(data-index=0)
+      - for (let i = 1; i < 4; i++)
+        span.slider(data-index=i)

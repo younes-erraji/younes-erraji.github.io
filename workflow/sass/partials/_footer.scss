@@ -1,0 +1,80 @@
+footer {
+  background-color: var(--dark-secondary);
+  color: var(--white);
+  .page-info {
+    font-size: 14px;
+    .container {
+      padding: 36px 8px;
+
+      @media (min-width: 575.98px) {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 1.5fr;
+        gap: 7px;
+      }
+    }
+    h4 {
+      margin-top: 44px;
+    }
+    .portfolio {
+      h3 {
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+      }
+      ul {
+        padding: 0 8px 4px;
+        li {
+          margin: 7px 0;
+          img {
+            width: 22px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 4px 0 0;
+          }
+          &:first-child {
+            display: flex;
+            padding-right: 8px;
+            line-height: 1.4;
+            img {
+              width: 44px;
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+    .links {
+      padding: 0 14px;
+      li {
+        margin-top: 12px;
+        &:first-of-type {
+          margin-top: 18px;
+        }
+      }
+    }
+    .about {
+      article {
+        line-height: 1.4;
+        text-align: justify;
+      }
+    }
+  }
+
+  .copyright {
+    padding: 22px 0;
+    background-color: var(--dark-primary);
+    font-size: 15px;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+    }
+    p {
+      strong {
+        letter-spacing: 2px;
+      }
+    }
+    @import "../components/socials";
+  }
+}

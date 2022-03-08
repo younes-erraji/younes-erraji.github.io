@@ -1,0 +1,121 @@
+.careers {
+  padding-block: var(--main-padding);
+
+  .careers-content {
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: "";
+      width: 2px;
+      height: 100%;
+      background-color: var(--blue-primary);
+      position: absolute;
+      left: 50%;
+      margin-left: -1px;
+      top: 0;
+    }
+
+    .year {
+      margin: 20px auto;
+      width: 50px;
+      background-color: var(--blue-primary);
+      position: relative;
+      z-index: 2;
+      border-radius: 4px;
+      text-align: center;
+      color: var(--white);
+      padding: 2px 5px;
+      font-weight: bold;
+    }
+    .left,
+    .right {
+      width: calc(50% - 25px);
+      margin-bottom: 40px;
+      position: relative;
+      &::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        background-color: var(--white);
+        border: 3px solid var(--blue-primary);
+        position: absolute;
+        border-radius: 50%;
+        top: 20px;
+
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+      &::after {
+        content: "";
+        border-style: solid;
+        border-width: 10px;
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 20px;
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .left {
+    float: left;
+    &::before {
+      right: -35px;
+    }
+
+    &::after {
+      border-color: transparent transparent transparent var(--white);
+      right: -20px;
+    }
+  }
+
+  .right {
+    float: right;
+    &::before {
+      left: -35px;
+    }
+
+    &::after {
+      border-color: transparent var(--white) transparent transparent;
+      left: -20px;
+    }
+  }
+
+  .content {
+    padding: 18px;
+    background-color: var(--white);
+    h4 {
+      color: var(--blue-primary);
+      margin: 0 0 10px;
+    }
+
+    p {
+      @extend %paragraph-lead;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .careers {
+    .careers-content {
+      .left,
+      .right {
+        width: 100%;
+        margin-bottom: 20px;
+        &::before,
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

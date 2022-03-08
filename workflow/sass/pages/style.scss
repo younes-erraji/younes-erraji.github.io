@@ -1,0 +1,40 @@
+@import "../helpers/mixin";
+@import "../variables/colors";
+@import "../global/index";
+@import "../components/heading";
+@import "../components/forms/buttons";
+@import "../animations/grabBar";
+@import "../partials/header";
+@import "../sections/landing";
+@import "../partials/settings";
+
+@import "../components/modal";
+@import "../utilities/icon";
+@import "../utilities/margin";
+@import "../utilities/paragraphs";
+
+@import "../sections/about";
+@import "../sections/skills";
+@import "../sections/services";
+@import "../sections/projects";
+@import "../sections/careers";
+@import "../sections/resources";
+
+.contact {
+  padding: 22px 0;
+  background-image: var(--background-secondary);
+  .container {
+    @media (min-width: 575.98px) {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  p {
+    @extend %paragraph-lead;
+  }
+}
+
+@import "../partials/footer";
+@import "../components/up";
