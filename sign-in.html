@@ -84,22 +84,25 @@
         </div>
       </div>
     </div>
-    <form class="form-auth" id="form-login" method="post">
-      <h1 class="special-heading">Login</h1>
-      <div class="username">
-        <label class="form-label" for="username">username<small class="required">*</small></label>
-        <input class="form-field" id="username" type="text" name="username" required>
-      </div>
-      <div class="password">
-        <label class="form-label" for="password">password <small class="required">*</small></label>
-        <input class="form-field" id="password" type="password" name="password" required>
-      </div>
-      <div class="checkbox">
-        <input type="checkbox" id="checkbox" name="checkbox">
-        <label class="form-label" for="checkbox">Remember me</label>
-      </div><span class="switch-authentication">not a member yet? <a class="link" href="./register.html">sign up</a></span>
-      <input class="login button primary" type="submit" value="Login">
-    </form>
+    <div class="auth">
+      <h2 class="special-heading">Sign In</h2>
+      <p>## 🙋 Log in to Your account</p>
+      <form class="form-auth" id="form-login" method="post">
+        <div class="username">
+          <label class="form-label" for="username">Username or E-mail <small class="required">*</small></label>
+          <input class="form-field" id="username" type="text" name="username" required autofocus>
+        </div>
+        <div class="password">
+          <label class="form-label" for="password">Password <small class="required">*</small></label>
+          <input class="form-field" id="password" type="password" name="password" required>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox" name="checkbox">
+          <label class="form-label" for="checkbox">Remember me</label>
+        </div><span class="switch-authentication">not a member yet? <a class="link" href="./register.html">sign up</a></span>
+        <input class="login button primary" type="submit" value="Login">
+      </form>
+    </div>
     <footer>
       <div class="page-info">
         <div class="container">
@@ -145,5 +148,9 @@
         </div>
       </div>
     </footer>
+    <button class="button primary up"><img src="./assets/icons/up.svg" alt=""></button>
+    <script src="./assets/scripts/script-min.js"></script>
+    <script src="./assets/scripts/changeLang-min.js"></script>
+    <script src="./assets/scripts/themesSwitcher-min.js"></script>
   </body>
 </html>
