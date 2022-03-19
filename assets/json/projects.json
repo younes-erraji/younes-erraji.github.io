@@ -48,5 +48,15 @@
       "image": "TAMKINE BOURSE.png",
       "alt": "Bourse"
     }
+  },
+  {
+    "Project": {
+      "name": "Deo Conseil",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?",
+      "link": "https://deoconseil.tamkine.org/",
+      "source code": "#",
+      "image": "Deo Conseil.jpg",
+      "alt": "Deo Conseil"
+    }
   }
 ]
