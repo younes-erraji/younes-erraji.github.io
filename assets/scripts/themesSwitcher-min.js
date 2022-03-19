@@ -1,0 +1,1 @@
+window.addEventListener("load",()=>{document.querySelector("input#theme-toggler").onchange=(e=>{console.log(e.target.checked)})});
