@@ -97,14 +97,14 @@
           <p><img src="./assets/icons/phone.svg" alt="">(+212) 6 51.65.67.99</p>
         </div>
         <form>
-          <p>Send an e-mail. All fields marked with an asterisk * are required</p>
-          <label class="form-label" for="name">name <small class="required">*</small></label>
-          <input class="form-field" type="text" id="name">
-          <label class="form-label" for="email">email address <small class="required">*</small></label>
+          <p>Send an e-mail. <br /> All fields marked with an asterisk * are required</p>
+          <label class="form-label" for="name">Name <small class="required">*</small></label>
+          <input class="form-field" type="text" id="name" autofocus>
+          <label class="form-label" for="email">E-mail address <small class="required">*</small></label>
           <input class="form-field" type="email" id="email">
-          <label class="form-label" for="phone">phone <small class="required">*</small></label>
+          <label class="form-label" for="phone">Phone number <small class="required">*</small></label>
           <input class="form-field" type="text" id="phone">
-          <label class="form-label" for="message">message <small class="required">*</small></label>
+          <label class="form-label" for="message">Message <small class="required">*</small></label>
           <textarea class="form-field" id="message"></textarea>
           <div class="checkbox">
             <input type="checkbox" id="checkbox">
@@ -174,5 +174,9 @@
     <script src="./assets/scripts/script-min.js"></script>
     <script src="./assets/scripts/changeLang-min.js"></script>
     <script src="./assets/scripts/themesSwitcher-min.js"></script>
+    <script src="./Libraries/babel.js"></script>
+    <script src="./Libraries/react/react.js"></script>
+    <script src="./Libraries/react/react-dom.js"></script>
+    <script src="./assets/scripts/fetch/resources.js" type="text/babel"></script>
   </body>
 </html>

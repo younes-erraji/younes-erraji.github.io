@@ -28,17 +28,17 @@ html
             img(src='./assets/icons/phone.svg' alt='')
             |(+212) 6 51.65.67.99
         form
-          p Send an e-mail. All fields marked with an asterisk * are required
-          label.form-label(for='name') name 
+          p Send an e-mail. <br /> All fields marked with an asterisk * are required
+          label.form-label(for='name') Name 
             small.required *
-          input.form-field(type="text" id='name')
-          label.form-label(for='email') email address 
+          input.form-field(type="text" id='name' autofocus)
+          label.form-label(for='email') E-mail address 
             small.required *
           input.form-field(type="email" id='email')
-          label.form-label(for='phone') phone 
+          label.form-label(for='phone') Phone number 
             small.required *
           input.form-field(type="text" id='phone')
-          label.form-label(for='message') message 
+          label.form-label(for='message') Message 
             small.required *
           textarea.form-field(id='message')
           .checkbox
@@ -50,3 +50,6 @@ html
     include ../assets/partials/footer
     include ../assets/components/scroll-up
     include ../assets/includes/scripts
+
+    include ../assets/includes/react-scripts
+    script(src="./assets/scripts/fetch/resources.js" type='text/babel')
