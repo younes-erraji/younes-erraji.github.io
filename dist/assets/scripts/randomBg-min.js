@@ -1,0 +1,1 @@
+window.addEventListener("load",function(){const e=document.querySelector(".landing"),n=["0.jpg","1.jpg","2.jpg","3.jfif","4.jpg","5.jpg"];let g=1;e.style.backgroundImage=`url("./assets/images/backgrounds/${n[0]}")`,setInterval(function(){g<n.length-1?(e.style.backgroundImage=`url("./assets/images/backgrounds/${n[g]}")`,g++):g=0},18e3)});

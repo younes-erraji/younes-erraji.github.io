@@ -4,6 +4,8 @@ doctype html
 html
   head
     +head('Younes ERRAJI - Skills', 'skills.css')
+    link(rel='stylesheet' href= './assets/styles/skills.css')
+
   body
     include ../assets/partials/header
 
@@ -13,8 +15,8 @@ html
 
     include ../assets/partials/footer
     include ../assets/components/scroll-up
-    include ../assets/global/scripts
+    include ../assets/includes/scripts
 
-    include ../assets/global/react-scripts
+    include ../assets/includes/react-scripts
 
     script(src="./assets/scripts/fetch/skills.js" type='text/babel')

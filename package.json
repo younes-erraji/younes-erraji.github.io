@@ -3,14 +3,31 @@
   "version": "1.0.1",
   "description": "",
   "main": "gulpfile.js",
-  "scripts": {},
+  "scripts": {
+    "gulp": "gulp"
+  },
   "keywords": [
     "Portfolio"
   ],
   "author": "Younes ERRAJI",
   "license": "ISC",
-  "browserlist": [
-    "last 2 versions",
+  "browserslist": [
+    "last 2 version",
     "> 2%"
-  ]
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "static-server": "^2.2.1"
+  }
 }

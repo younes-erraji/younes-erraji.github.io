@@ -64,6 +64,10 @@ iframe {
     @import "../components/forms/fields";
     @import "../components/forms/checkbox";
 
+    input:not([type="submit"]) {
+      width: 80%;
+    }
+
     input:not([type="submit"]),
     textarea {
       @media (max-width: 767.98px) {

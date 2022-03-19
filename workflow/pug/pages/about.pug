@@ -3,7 +3,8 @@ include ../assets/global/head
 doctype html
 html
   head
-    +head('Younes ERRAJI - About us', 'about.css')
+    +head('Younes ERRAJI - About us')
+    link(rel='stylesheet' href= './assets/styles/about.css')
   body
     include ../assets/partials/header
 
@@ -13,4 +14,4 @@ html
 
     include ../assets/partials/footer
     include ../assets/components/scroll-up
-    include ../assets/global/scripts
+    include ../assets/includes/scripts

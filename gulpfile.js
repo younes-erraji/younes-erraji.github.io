@@ -1,48 +1,68 @@
 const gulp = require("gulp"),
   concat = require("gulp-concat"),
-  sass = require("gulp-sass"),
+  sass = require("gulp-sass")(require("sass")),
   pug = require("gulp-pug"),
   autoprefixer = require("gulp-autoprefixer"),
   livereload = require("gulp-livereload"),
   sourcemaps = require("gulp-sourcemaps"),
   minify = require("gulp-minify");
 
-gulp.task("pug", function () {
-  return gulp
-    .src("workflow/pug/pages/*.pug")
-    .pipe(pug({ pretty: true }))
-    .pipe(gulp.dest("dist"))
-    .pipe(livereload());
-});
+var paths = {
+  sass: {
+    src: "workflow/sass/pages/*.scss",
+    dest: "dist/assets/styles",
+  },
+  pug: {
+    src: "workflow/pug/pages/*.pug",
+    dest: "dist",
+  },
+  script: {
+    src: "workflow/scripts/*.js",
+    dest: "dist/assets/scripts",
+  },
+};
 
-gulp.task("sass", function () {
+function pugTask() {
   return gulp
-    .src("workflow/sass/pages/*.scss")
+    .src(paths.pug.src)
+    .pipe(pug({ pretty: true }))
+    .pipe(gulp.dest(paths.pug.dest))
+    .pipe(livereload());
+}
+
+function sassTask() {
+  return gulp
+    .src(paths.sass.src)
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("dist/assets/styles"))
+    .pipe(gulp.dest(paths.sass.dest))
     .pipe(livereload());
-});
+}
 
-/*
-gulp.task("scripts", function () {
+function scriptsTask() {
   return gulp
-    .src("workflow/scripts/*.js")
-    .pipe(concat("scripts.js"))
+    .src(paths.script.src)
     .pipe(minify())
-    .pipe(gulp.dest("dist/assets/scripts"))
+    .pipe(gulp.dest(paths.script.dest))
     .pipe(livereload());
-});
-*/
+}
 
-gulp.task("watch", function () {
+function watch() {
   require("./server");
   livereload.listen();
-  gulp.watch("workflow/pages/*.pug", ["pug"]);
-  gulp.watch("workflow/sass/*.scss", ["sass"]);
-  // gulp.watch("workflow/scripts/*.js", ["scripts"]);
-});
+  gulp.watch(paths.pug.src, pugTask);
+  gulp.watch(paths.sass.src, sassTask);
+  gulp.watch(paths.script.src, scriptsTask);
+}
 
-gulp.task("default", ["watch"]);
+let build = gulp.series(gulp.parallel(pugTask, sassTask, scriptsTask));
+
+exports.pugTask = pugTask;
+exports.sassTask = sassTask;
+exports.scriptsTask = scriptsTask;
+exports.watch = watch;
+exports.build = build;
+
+exports.default = build;

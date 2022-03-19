@@ -3,7 +3,8 @@ include ../assets/global/head
 doctype html
 html
   head
-    +head('Younes ERRAJI - Projects', 'projects.css')
+    +head('Younes ERRAJI - Projects')
+    link(rel='stylesheet' href= './assets/styles/projects.css')
   body
     include ../assets/partials/header
 
@@ -13,10 +14,10 @@ html
 
     include ../assets/partials/footer
     include ../assets/components/scroll-up
-    include ../assets/global/scripts
+    include ../assets/includes/scripts
 
-    script(src="./assets/scripts/modals.js")
+    script(src="./assets/scripts/modals-min.js")
     
-    include ../assets/global/react-scripts
+    include ../assets/includes/react-scripts
 
     script(src="./assets/scripts/fetch/projects.js" type='text/babel')

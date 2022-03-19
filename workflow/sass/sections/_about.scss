@@ -9,6 +9,12 @@
       row-gap: 18px;
       width: 58%;
       @import "../components/socials";
+      .socials {
+        justify-self: end;
+      }
+      .resume {
+        width: fit-content;
+      }
     }
     .picture {
       width: 40%;

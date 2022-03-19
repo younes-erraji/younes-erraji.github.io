@@ -2,7 +2,7 @@ npm i gulp --save-dev
 
 npm i --save-dev gulp-concat
 npm i --save-dev gulp-autoprefixer
-npm i --save-dev gulp-sass
+npm i --save-dev sass gulp-sass
 npm i --save-dev gulp-pug
 npm i --save-dev gulp-sourcemaps
 npm i --save-dev gulp-uglify
