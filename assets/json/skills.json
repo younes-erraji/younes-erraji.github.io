@@ -52,14 +52,6 @@
       "icon": "wordpress.svg"
     }
   },
-  {
-    "skill": {
-      "name": "Moodle",
-      "percentage": "76%",
-      "icon": "Moodle.svg"
-    }
-  },
-
   { "skill": { "name": "Java", "percentage": "36%", "icon": "java.svg" } },
   {
     "skill": {
@@ -69,5 +61,5 @@
     }
   },
   { "skill": { "name": "Gulp JS", "percentage": "36%", "icon": "gulp.svg" } },
-  { "skill": { "name": "Axios", "percentage": "36%", "icon": "axios.svg" } }
+  { "skill": { "name": "Axios", "percentage": "48%", "icon": "axios.png" } }
 ]
