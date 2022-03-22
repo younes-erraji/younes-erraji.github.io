@@ -87,11 +87,12 @@
     margin-top: 14px;
     a.show-more {
       position: relative;
-      padding-inline: 38px;
+      padding-inline-start: 38px;
+      padding-inline-end: 52px;
       img {
         height: 18px;
         position: absolute;
-        right: 18px;
+        right: 26px;
         top: 50%;
         transform: translateY(-50%);
       }

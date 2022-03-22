@@ -34,9 +34,9 @@ header
 nav
   .container
     input#nav-check(type="checkbox")
-    .nav-header
+    a(href='./index.html').nav-header
       .nav-brand: img(src="./assets/images/global/logo.png", height="43.6", alt="")
-      .nav-title: a(href='./index.html') Younes ERRAJI
+      .nav-title Younes ERRAJI
     .nav-button
       label(for="nav-check")
         - for (let i = 0; i < 3; i++)
@@ -46,7 +46,7 @@ nav
       a(href="./about.html") About
       a(href="./skills.html") Skills
       a(href="./projects.html") Projects
-      a(href="#careers") Careers
+      a(href="./careers.html") Careers
       a(href="./contact.html") Contact
-      a(href="./sign-in.html", class="account m-start:1 m-end:1") Sign In
+      a(href="./sign-in.html", class="account m-inline:1") Sign In
       a.account(href="./sign-up.html") Sign Up

@@ -15,3 +15,7 @@
 body {
   overflow-x: hidden;
 }
+
+a[href] {
+  user-select: none;
+}
