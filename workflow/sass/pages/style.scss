@@ -20,6 +20,18 @@
 @import "../sections/careers";
 @import "../sections/resources";
 
+.timer {
+  padding: 28px 0;
+  /* background-color: #444; */
+  background-color: #2c3e50;
+  .remaining-time {
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+
 .contact {
   padding: 22px 0;
   background-image: var(--background-secondary);

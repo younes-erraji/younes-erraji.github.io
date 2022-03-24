@@ -1,0 +1,57 @@
+section.noe {
+  position: relative;
+  margin-block: 18px;
+  display: flex;
+  justify-content: center;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--grey-light);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  span {
+    background-color: white;
+    z-index: 10;
+    padding: 7px;
+
+    color: var(--grey-dark);
+    font-size: 16px;
+  }
+}
+
+.sign-in-up-with-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 7px;
+  margin-block: 8px;
+  .sign-in-up-with {
+    border: {
+      width: 4px;
+      color: var(--grey-light);
+      style: solid;
+    }
+    padding: 8px;
+    border-radius: $radius;
+    @include flexible(center, center);
+    background-color: transparent;
+    transition: 0.4s background-color;
+    cursor: pointer;
+    img {
+      @extend %icon;
+    }
+
+    &:hover {
+      background-color: var(--grey-light);
+    }
+  }
+}
+/*
+  .sign-in-up-with.facebook: img.icon(src="", alt="")
+  .sign-in-up-with.google: img.icon(src="", alt="")
+  .sign-in-up-with.github: img.icon(src="", alt="")
+*/
