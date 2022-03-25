@@ -19,6 +19,7 @@
   }
 
   .intro-image {
+    @include flexible(center, center);
     @media (min-width: 467.98px) {
       width: 178px;
       max-width: 20%;
@@ -33,6 +34,9 @@
     img {
       width: 100%;
       object-fit: contain;
+     @media (max-width: 467px) {
+        width: 184px;
+      }
     }
   }
   .intro-text {
@@ -71,7 +75,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10px;
+    bottom: 14px;
     font-size: 17px;
     font-weight: 600;
     color: var(--dark-secondary);
