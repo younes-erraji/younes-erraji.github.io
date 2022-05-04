@@ -25,6 +25,7 @@ body {
       margin: 16px 0;
       @import "../components/forms/labels";
       @import "../components/forms/fields";
+      @import "../components/forms/feedback";
 
       input:not([type="submit"]):not([type="checkbox"]) {
         width: 100%;

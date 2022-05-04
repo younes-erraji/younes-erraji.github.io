@@ -4,10 +4,11 @@
   padding: 7px;
   .theme-toggler-container {
     height: 42px;
-    width: 80px;
+    width: 60px;
     padding: 4px;
     border-radius: 20px;
     background-color: var(--grey-light);
+    border: 1px solid var(--grey-dark);
     position: relative;
     cursor: pointer;
     .circle {
@@ -15,7 +16,7 @@
       height: 34px;
       border-radius: 50%;
       position: absolute;
-      top: 4px;
+      top: 3px;
       transition: left 0.4s, right 0.4s;
     }
   }
@@ -49,6 +50,6 @@
     color: var(--dark-secondary);
     font-weight: 600;
     font-size: 16px;
-    padding: 7px;
+    padding: 11px;
   }
 }

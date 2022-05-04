@@ -23,24 +23,28 @@ html
             |younes.erraji8@gmail.com
           p
             img(src='./assets/icons/phone.svg' alt='')
-            |06 51.65.67.99
+            |06 ##.##.##.##
           p
             img(src='./assets/icons/phone.svg' alt='')
-            |(+212) 6 51.65.67.99
+            |(+212) 6 ##.##.##.##
         form
           p Send an e-mail. <br /> All fields marked with an asterisk * are required
           label.form-label(for='name') Name 
             small.required *
           input.form-field(type="text" id='name' autofocus)
+          small.feedback The Name Field Is Required
           label.form-label(for='email') E-mail address 
             small.required *
           input.form-field(type="email" id='email')
+          small.feedback The E-mail Field Is Required
           label.form-label(for='phone') Phone number 
             small.required *
           input.form-field(type="text" id='phone')
+          small.feedback The Phone Field Is Required
           label.form-label(for='message') Message 
             small.required *
           textarea.form-field(id='message')
+          small.feedback The Message Field Is Required
           .checkbox
             input(type='checkbox' id='checkbox')
             label.form-label(for='checkbox') Send a copy to your address 

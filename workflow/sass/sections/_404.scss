@@ -1,0 +1,18 @@
+section.not-found-404 {
+  min-height: calc(100vh - 115.6px);
+  @include flexible(center, center);
+  flex-direction: column;
+  padding: 38px 18px;
+  h1 {
+    color: var(--grey-light);
+    font-size: 188px;
+    font-weight: 700;
+    margin: 0;
+  }
+  p {
+    font-size: 88px;
+    color: var(--grey-dark);
+    font-weight: 500;
+    margin-top: -22px;
+  }
+}

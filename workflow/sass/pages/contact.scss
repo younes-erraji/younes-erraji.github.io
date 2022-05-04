@@ -62,6 +62,7 @@ iframe {
     }
     @import "../components/forms/labels";
     @import "../components/forms/fields";
+    @import "../components/forms/feedback";
     @import "../components/forms/checkbox";
 
     input:not([type="submit"]) {
