@@ -4,7 +4,9 @@
 @import "../components/heading";
 @import "../components/forms/buttons";
 @import "../animations/grabBar";
+@import "../partials/gradbar";
 @import "../partials/header";
+@import "../partials/navbar";
 @import "../utilities/icon";
 @import "../utilities/overlay";
 @import "../utilities/margin";
@@ -17,7 +19,7 @@ iframe {
   width: 100%;
 }
 
-.contact {
+main.contact {
   background-image: url("./../images/contact.png");
   background-size: cover;
   background-position: center;

@@ -1,0 +1,19 @@
+nav
+  .container
+    input#nav-check(type="checkbox")
+    a(href='./index.html').nav-header
+      .nav-brand: img(src="./assets/images/global/logo.png", height="43.6", alt="")
+      .nav-title Younes ERRAJI
+    .nav-button
+      label(for="nav-check")
+        - for (let i = 0; i < 3; i++)
+          span
+    .nav-links
+      a(href="./index.html") Home
+      a(href="./about.html") About
+      a(href="./skills.html") Skills
+      a(href="./projects.html") Projects
+      a(href="./careers.html") Careers
+      a(href="./contact.html") Contact
+      a(href="./sign-in.html", class="account m-inline:1") Sign In
+      a.account(href="./sign-up.html") Sign Up

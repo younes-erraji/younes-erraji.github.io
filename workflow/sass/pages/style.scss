@@ -4,7 +4,9 @@
 @import "../components/heading";
 @import "../components/forms/buttons";
 @import "../animations/grabBar";
+@import "../partials/gradbar";
 @import "../partials/header";
+@import "../partials/navbar";
 @import "../sections/landing";
 @import "../partials/settings";
 
@@ -26,13 +28,12 @@
   background-color: #2c3e50;
   .remaining-time {
     font-size: 48px;
-    color: #fff;
+    color: var(--white);
     text-align: center;
   }
 }
 
-
-.contact {
+section.contact {
   padding: 22px 0;
   background-image: var(--background-secondary);
   .container {
@@ -45,6 +46,7 @@
   }
   p {
     @extend %paragraph-lead;
+    text-align: justify;
   }
 }
 

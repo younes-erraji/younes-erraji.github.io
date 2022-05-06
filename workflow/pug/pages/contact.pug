@@ -6,12 +6,14 @@ html
     +head('Younes ERRAJI - Contact')
     link(rel='stylesheet' href= './assets/styles/contact.css')
   body
+    include ../assets/partials/gradbar
     include ../assets/partials/header
+    include ../assets/partials/navbar
 
     include ../assets/utilities/settings
     
     iframe(src="https://www.google.com/maps/embed?" height="240" allowfullscreen="true" loading="lazy")
-    .contact#contact
+    main.contact
       .overlay
       .container
         .contact-info

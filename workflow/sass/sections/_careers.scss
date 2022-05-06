@@ -16,7 +16,7 @@
     }
 
     .year {
-      margin: 20px auto;
+      margin: 0 auto;
       width: 50px;
       background-color: var(--blue-primary);
       position: relative;
@@ -100,6 +100,7 @@
 
     p {
       @extend %paragraph-lead;
+      text-align: justify;
     }
   }
 }
