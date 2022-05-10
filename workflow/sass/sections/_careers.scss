@@ -16,7 +16,7 @@
     }
 
     .year {
-      margin: 0 auto;
+      margin: 14px auto;
       width: 50px;
       background-color: var(--blue-primary);
       position: relative;
@@ -96,6 +96,7 @@
     h4 {
       color: var(--blue-primary);
       margin: 0 0 10px;
+      line-height: 1.6;
     }
 
     p {
